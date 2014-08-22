@@ -8,3 +8,7 @@ before_install:
   - sudo apt-get install -y liblapack-dev
 
 script: ./autogen.sh && ./configure && make
+
+notifications:
+  irc: "irc.oftc.net#openvsip"
+
